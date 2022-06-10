@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export const ClickCounter = () => {
   const [count, setCount] = useState(0);
@@ -6,7 +6,7 @@ export const ClickCounter = () => {
   return (
     <div>
       {/* <p>You clicked {count} times</p> */}
-      <button onClick={() => setCount(c=> c + 1)}>Count {count}</button>
+      <button onClick={() => setCount((c) => c + 1)}>Count {count}</button>
     </div>
   );
-}
+};
